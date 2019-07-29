@@ -168,6 +168,9 @@ ro.vendor.qti.va_aosp.support=1
 # Property to enable/disable PASR
 vendor.power.pasr.enabled=true
 
+# PASR
+vendor.power.pasr.enabled=true
+
 # Perf
 ro.vendor.extension_library=libqti-perfd-client.so
 
