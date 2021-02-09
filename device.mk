@@ -136,6 +136,10 @@ PRODUCT_PACKAGES += \
     SecureElement \
     Tag
 
+# Perf
+PRODUCT_PACKAGES += \
+    vendor.qti.hardware.perf@2.0
+
 # Power
 PRODUCT_PACKAGES += \
     android.hardware.power@1.2-service.raphael
