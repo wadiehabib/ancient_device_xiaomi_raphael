@@ -281,7 +281,7 @@ PRODUCT_PACKAGES += \
 
 # Livedisplay
     vendor.lineage.livedisplay@2.0-service-sdm \
-    vendor.lineage.livedisplay@2.0-service.xiaomi_raphael
+    vendor.lineage.livedisplay@2.1-service.raphael
 
 # Media
 PRODUCT_PACKAGES += \
