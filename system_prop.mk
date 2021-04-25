@@ -38,7 +38,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.eyecare.brightness.level=5 \
     ro.displayfeature.histogram.enable=true \
     ro.hist.brightness.threshold=7 \
-    ro.sf.lcd_density=440 \
+    ro.sf.lcd_density=420 \
     ro.vendor.display.ad=1 \
     ro.vendor.display.ad.hdr_calib_data=/vendor/etc/hdr_config.cfg \
     ro.vendor.display.ad.sdr_calib_data=/vendor/etc/sdr_config.cfg \
@@ -60,6 +60,39 @@ PRODUCT_PROPERTY_OVERRIDES += \
     debug.sf.latch_unsignaled=1 \
     debug.sf.enable_hwc_vds=1 \
     debug.cpurend.vsync=false
+    debug.composition.type=c2d
+    debug.composition.type=gpu
+    debug.egl.hw=1
+    debug.enabletr=true
+    debug.overlayui.enable=1
+    debug.performance.tuning=1
+    debug.sf.hw=1
+    dev.pm.dyn_samplingrate=1
+    hw3d.force=1
+    hwui.disable_vsync=true
+    hwui.render_dirty_regions=false
+    persist.sys.composition.type=c2d
+    persist.sys.composition.type=gpu
+    persist.sys.ui.hw=1
+    ro.config.enable.hw_accel=true
+    ro.product.gpu.driver=1
+    ro.fb.mode=1
+    ro.sf.compbypass.enable=0
+    video.accelerate.hw=1
+
+PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
+    ro.surface_flinger.force_hwc_copy_for_virtual_displays=true \
+    ro.surface_flinger.max_frame_buffer_acquired_buffers=3 \
+    ro.surface_flinger.max_virtual_display_dimension=4096 \
+    ro.surface_flinger.vsync_event_phase_offset_ns=2000000 \
+    ro.surface_flinger.vsync_sf_event_phase_offset_ns=6000000
+    ro.surface_flinger.protected_contents=true
+    ro.surface_flinger.use_color_management=true
+
+# IOP
+PRODUCT_PROPERTY_OVERRIDES += \
+    vendor.iop.enable_prefetch_ofr=1 \
+    vendor.iop.enable_uxe=0
 
 # Media
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -74,6 +107,11 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Netflix
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.netflix.bsp_rev=Q855-16947-1
+
+#Perf
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.vendor.qti.core.ctl_max_cpu=4
+    ro.vendor.qti.core.ctl_min_cpu=2
 
 # RIL
 PRODUCT_PROPERTY_OVERRIDES += \
