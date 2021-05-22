@@ -1,7 +1,7 @@
 [
    {
    "remote"       : "github",
-   "repository"   : "NusantaraROM-Devices/vendor_xiaomi_raphael",
+   "repository"   : "wadiehabib/vendor_xiaomi_raphael",
    "target_path"  : "vendor/xiaomi",
    "branch"       : "11"
    }
