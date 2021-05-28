@@ -26,6 +26,6 @@ EXTRA_FOD_ANIMATIONS := true
 
 # Ancient
 ANCIENT_OFFICIAL=true
-TARGET_GAPPS_ARCH := arm64
-IS_PHONE := true
-ANCIENT_GAPPS := true
+#TARGET_GAPPS_ARCH := arm64
+#IS_PHONE := true
+#ANCIENT_GAPPS := true
