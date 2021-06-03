@@ -39,6 +39,16 @@ DEVICE_PACKAGE_OVERLAYS += \
 # Device uses high-density artwork where available
 PRODUCT_AAPT_CONFIG := normal
 
+# Permissions
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/android.hardware.camera.ar.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/android.hardware.camera.ar.xml \
+    $(LOCAL_PATH)/configs/android.hardware.gamepad.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/android.hardware.gamepad.xml \
+    $(LOCAL_PATH)/configs/android.hardware.vr.high_performance.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/android.hardware.vr.high_performance.xml \
+    $(LOCAL_PATH)/configs/com.google.android.dialer.support.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/com.google.android.dialer.support.xml \
+    $(LOCAL_PATH)/configs/google_build.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/google_build.xml \
+    $(LOCAL_PATH)/configs/nexus.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/nexus.xml \
+    $(LOCAL_PATH)/configs/pixel_2016_exclusive.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/pixel_2016_exclusive.xml
+
 # AID/fs configs
 PRODUCT_PACKAGES += \
     fs_config_files
