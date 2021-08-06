@@ -82,6 +82,9 @@ persist.radio.NO_STAPA=1
 persist.radio.sar_sar_sensor=true
 persist.radio.VT_HYBRID_ENABLE=1
 
+# SkiaGL
+debug.hwui.renderer=skiagl
+
 # SSR
 persist.vendor.ssr.restart_level=ALL_ENABLE
 
