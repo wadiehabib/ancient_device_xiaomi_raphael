@@ -37,7 +37,7 @@
 /vendor/bin/wifi-mac-generator                                                                         u:object_r:wifi-mac-generator_exec:s0
 
 # Xiaomi thermal daemon
-/vendor/bin/mi_thermald		                                                                           u:object_r:mi_thermald_exec:s0
+/vendor/bin/mi_thermald		                                                                       u:object_r:mi_thermald_exec:s0
 /data/vendor/thermal(/.*)?                                                                             u:object_r:thermal_data_file:s0
 
 #DRM
@@ -50,3 +50,5 @@
 #DPM
 /(product|system/product)/bin/dpmd                                                                     u:object_r:vendor_dpmd_exec:s0
 
+# HBM
+/sys/devices/platform/soc/soc:qcom,dsi-display-primary/hbm                                             u:object_r:vendor_sysfs_hbm:s0
