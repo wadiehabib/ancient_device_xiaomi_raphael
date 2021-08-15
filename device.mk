@@ -158,6 +158,14 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.opengles.aep.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.opengles.aep.xml \
     $(LOCAL_PATH)/configs/qdcm_calib_data_samsung_ea8076_fhd_cmd_dsi_panel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_samsung_ea8076_fhd_cmd_dsi_panel.xml
 
+PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
+    ro.surface_flinger.has_wide_color_display=true \
+    ro.surface_flinger.has_HDR_display=true \
+    ro.surface_flinger.use_color_management=true \
+    ro.surface_flinger.wcg_composition_dataspace=143261696 \
+    ro.surface_flinger.protected_contents=true \
+    ro.surface_flinger.force_hwc_copy_for_virtual_displays=true
+
 # DRM
 PRODUCT_PACKAGES += \
     android.hardware.drm@1.3-service.clearkey
