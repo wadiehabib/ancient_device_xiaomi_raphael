@@ -91,6 +91,7 @@ TARGET_FWK_SUPPORTS_FULL_VALUEADDS := true
 TARGET_USES_QTI_CAMERA_DEVICE := true
 
 # Display
+TARGET_SCREEN_DENSITY := 420
 TARGET_USES_ION := true
 TARGET_USES_NEW_ION_API := true
 USE_OPENGL_RENDERER := true
@@ -187,7 +188,9 @@ USE_SENSOR_MULTI_HAL := true
 
 # Sepolicy
 include device/qcom/sepolicy_vndr/SEPolicy.mk
-
+ifneq (,$(filter userdebug eng, $(TARGET_BUILD_VARIANT)))
+SELINUX_IGNORE_NEVERALLOWS := true
+endif
 BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(DEVICE_PATH)/sepolicy/private
 BOARD_PLAT_PUBLIC_SEPOLICY_DIR += $(DEVICE_PATH)/sepolicy/public
 BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
