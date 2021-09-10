@@ -298,6 +298,7 @@ PRODUCT_PACKAGES += \
     android.hardware.light@2.0-service.xiaomi_msmnile
 
 # Livedisplay
+PRODUCT_PACKAGES += \
     vendor.lineage.livedisplay@2.0-service-sdm \
     vendor.lineage.livedisplay@2.1-service.raphael
 
@@ -507,9 +508,6 @@ PRODUCT_PACKAGES += \
     libdisplayconfig.qti.vendor \
     libnl \
     libqdMetaData 
-
-PRODUCT_BOOT_JARS += \
-    WfdCommon
 
 # XiaomiParts
 PRODUCT_PACKAGES += \
