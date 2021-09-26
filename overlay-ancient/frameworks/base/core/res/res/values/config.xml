@@ -47,4 +47,6 @@
          and on the navigation bar and disabled for all other devices. -->
     <bool name="config_statusBarBurnInProtection">true</bool>
 
+    <!-- Whether device supports gaming mode profiles -->
+    <bool name="config_gamingmode_performance">true</bool>
 </resources>
