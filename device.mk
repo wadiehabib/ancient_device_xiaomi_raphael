@@ -259,6 +259,10 @@ PRODUCT_PACKAGES += \
     ueventd.qcom.rc \
     init.performance_level.rc
 
+# IMS
+PRODUCT_PACKAGES += \
+    CarrierConfigOverlay
+
 # IFAA manager
 PRODUCT_PACKAGES += \
     org.ifaa.android.manager
