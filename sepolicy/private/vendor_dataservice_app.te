@@ -1,0 +1,2 @@
+type hal_imsrcsd_hwservice, hwservice_manager_type;
+allow vendor_dataservice_app hal_imsrcsd_hwservice:hwservice_manager { find };
